@@ -1,0 +1,55 @@
+/*
+Source: "Bootstrap ile Baştan Sona Web Tasarım Projesi"
+        https://www.youtube.com/watch?v=MUCtroYVVFA&list=PL3AsBN9JULajqhZFwpnPWJvFhE_4zYT9i&index=1
+*/
+body {
+    padding-top: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+
+@mixin leaf-color($color) {
+    border: 10px solid $color;
+    background-color: $color;
+}
+
+/* SLIDER */
+.slider-image {
+    height: 600px;
+}
+
+/* ABOUT */
+#about, #gallery {
+    background-color: #f2f2f2;
+}
+
+.hr-divider {
+    border: none;
+    border-top: 3px solid #343a40;
+    max-width: 250px;
+    margin: 25px auto;
+}
+
+.i-leaf-gray {
+    color: #343a40;
+    position: relative;
+    top: -55px;
+    font-size: 40px;
+    @include leaf-color(#f2f2f2);
+}
+
+.i-leaf-white {
+    color: #343a40;
+    position: relative;
+    top: -55px;
+    font-size: 40px;
+    @include leaf-color(white);
+}
+
+/* TEAM, GALLERY */
+.team-card, .gallery-image {
+    transition: all 0.5s ease-in-out;
+}
+
+.team-card img:hover, .gallery-image:hover {
+    opacity: 0.8;
+}
